@@ -1,15 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-
-import styles from 'styles/Home.module.css'
-
 export default function Home() {
   return (
-    <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
-      <div>
-        <div className="text-xl font-medium text-black">ChitChat</div>
-        <p className="text-gray-500">You have a new message!</p>
-      </div>
+    <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+      <p>Iniciando</p>
     </div>
   )
 }
