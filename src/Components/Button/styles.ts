@@ -8,6 +8,12 @@ export const Button = styled.button`
   background: ${({ theme }) => theme.colors.green} 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 40px ${({ theme }) => theme.colors.shadowColor};
   cursor: pointer;
+  margin-top: 31px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: ${({ right }) => right ? 'flex-end' : 'flex-start'};
 
   &:hover {
     background: ${({ theme }) => theme.colors.green} 0% 0% no-repeat padding-box;

@@ -40,7 +40,6 @@ export const Img = styled(Image)`
 `;
 
 export const ContainerWhoWeAre = styled.div`
-  width: 1920px;
   height: 1080px;
   background: transparent url('./Mask.png') 0% 0% no-repeat padding-box;
   opacity: 0.6;
@@ -50,14 +49,109 @@ export const ContainerWhoWeAre = styled.div`
 `;
 
 export const Circle = styled.div`
-  .image {
-    position: absolute;
-  }
+  width: 894px;
+  height: 903px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const TextInfo = styled.div`
-  position: relative;
+  position: absolute;
   width: 25%;
+  display: flex;
+  flex-direction: column;
 `;
 
-export const TitleTextInfo = styled.p``;
+export const Services = styled.div`
+  /* height: 1080px; */
+
+  display: flex;
+  justify-content: space-evenly;
+`;
+
+export const ContentService = styled.div`
+  display: flex;
+  margin-left: 10em;
+
+  .card02 {
+    margin-left: 39px;
+    margin-top: 10em;
+  }
+`;
+
+export const CardService = styled.div`
+  background: ${({ theme }) => theme.colors.primary};
+  height: 431px;
+  width: 411px;
+  border: 1px solid ${({ theme }) => theme.colors.green};
+  border-radius: 7px;
+  box-shadow: 0px 0px 40px #0000008A;
+  margin-top: 39px;
+
+  .cardServiceHeader {
+    background: ${({ theme }) => theme.colors.green};
+    height: 103px;
+    margin-top: 69px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+    opacity: 0.48;
+
+    .icone {
+      width: 69px;
+      height: 61px;
+
+      background: ${({ theme }) => theme.colors.textColor};
+    }
+    
+    p {
+      font-size: 23px;
+      color: ${({ theme }) => theme.colors.textColor};
+      margin-left: 20px;
+
+    }
+  }
+
+  .title {
+    font-size: 23px;
+    font-weight: bold;
+    color: ${({ theme }) => theme.colors.textColor};
+    margin-left: 33px;
+    margin-top: 33px;
+  }
+
+  .description {
+    font-size: 16px;
+    color: ${({ theme }) => theme.colors.textColor};
+    margin-left: 33px;
+    margin-right: 33px;
+    line-height: 2;
+  }
+`;
+
+export const CardDescriptionText = styled.div`
+  font-size: 55px;
+  color: ${({ theme }) => theme.colors.green};
+
+  display: flex;
+  align-self: flex-end;
+`;
+
+export const ContentDescription = styled.div`
+  display: flex;
+  align-items: center;
+  left: 18%;
+  position: relative;
+  text-align: right;
+  /* justify-content: center; */
+`;
+
+export const TextInfoContent = styled.p`
+  position: absolute;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+`;

@@ -12,7 +12,12 @@ import {
   ContainerWhoWeAre,
   Circle,
   TextInfo,
-  TitleTextInfo
+  Services,
+  ContentService,
+  ContentDescription,
+  CardService,
+  TextInfoContent,
+  CardDescriptionText
 } from './styles/styles'
 
 export default function Home() {
@@ -31,17 +36,86 @@ export default function Home() {
 
       <ContainerWhoWeAre>
         <Circle>
-          <Image className="image" src="/circle.svg" alt="" height={903} width={894} />
+          <Image className="image" src="/Circle.svg" alt="" height={903} width={894} />
           <TextInfo>
             <Title>Quem Somos</Title>
             <Description>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, atque eaque eius esse et harum inventore ipsam nam necessitatibus nemo pariatur provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, atque eaque eius esse et harum inventore ipsam nam necessitatibus nemo pariatur provident.
             </Description>
 
-            <Button />
+            <Button  right={false}/>
           </TextInfo>
         </Circle>
       </ContainerWhoWeAre>
+
+      <Services>
+        <ContentService>
+          <div>
+            <CardService>
+              <div className="cardServiceHeader">
+                <div className="icone"/>
+                <p>Icone</p>
+              </div>
+
+              <p className="title">Lorem Ipsum</p>
+
+              <p className="description">
+              Lorem ipsum dolor sit amet, atque eaque eius esse et harum inventore ipsam nam necessi is the tatibus nemo pariatur provident.
+              </p>
+            </CardService>
+            <CardService>
+              <div className="cardServiceHeader">
+                <div className="icone"/>
+                <p>Icone</p>
+              </div>
+
+              <p className="title">Lorem Ipsum</p>
+
+              <p className="description">
+              Lorem ipsum dolor sit amet, atque eaque eius esse et harum inventore ipsam nam necessi is the tatibus nemo pariatur provident.
+              </p>
+            </CardService>
+          </div>
+          <div className="card02">
+            <CardService>
+              <div className="cardServiceHeader">
+                <div className="icone"/>
+                <p>Icone</p>
+              </div>
+
+              <p className="title">Lorem Ipsum</p>
+
+              <p className="description">
+              Lorem ipsum dolor sit amet, atque eaque eius esse et harum inventore ipsam nam necessi is the tatibus nemo pariatur provident.
+              </p>
+            </CardService>
+            <CardService>
+              <div className="cardServiceHeader">
+                <div className="icone"/>
+                <p>Icone</p>
+              </div>
+
+              <p className="title">Lorem Ipsum</p>
+
+              <p className="description">
+              Lorem ipsum dolor sit amet, atque eaque eius esse et harum inventore ipsam nam necessi is the tatibus nemo pariatur provident.
+              </p>
+            </CardService>
+          </div>
+        </ContentService>
+        <ContentDescription>
+          <Image className="image" src="/arrowLeft.svg" alt="" height={903} width={894} />
+
+          <TextInfoContent>
+            <CardDescriptionText>Serviços</CardDescriptionText>
+            <Description>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, atque eaque eius esse et harum inventore ipsam nam necessitatibus nemo pariatur provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, atque eaque eius esse et harum inventore ipsam nam necessitatibus nemo pariatur provident.
+            </Description>
+
+            <Button right={true}/>
+          </TextInfoContent>
+        </ContentDescription>
+      </Services>
     </Container>
   )
 }

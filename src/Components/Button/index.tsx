@@ -1,8 +1,12 @@
 import { Button } from './styles';
 
-export default function ButtonComponent() {
+interface ButtonStyled {
+  right: boolean
+}
+
+export default function ButtonComponent({right}: ButtonStyled) {
   return (
-    <Button>
+    <Button right={right}>
       Saiba mais
     </Button>
   )
