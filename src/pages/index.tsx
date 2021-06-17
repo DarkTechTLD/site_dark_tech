@@ -17,7 +17,12 @@ import {
   ContentDescription,
   CardService,
   TextInfoContent,
-  CardDescriptionText
+  CardDescriptionText,
+  Portfolio,
+  ContentPortfolio,
+  TextInfoPortfolio,
+  ContentProjects,
+  ContentFrame
 } from './styles/styles'
 
 export default function Home() {
@@ -116,6 +121,49 @@ export default function Home() {
           </TextInfoContent>
         </ContentDescription>
       </Services>
+
+
+      <Portfolio>
+        <ContentPortfolio>
+          <Image src="/Q.svg" alt="" height={903} width={894} />
+
+          <TextInfoPortfolio>
+            <Title>Portfólio</Title>
+            <Description>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, atque eaque eius esse et harum inventore ipsam nam necessitatibus nemo pariatur provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, atque eaque eius esse et harum inventore ipsam nam necessitatibus nemo pariatur provident.
+            </Description>
+
+          </TextInfoPortfolio>
+        </ContentPortfolio>
+
+        <ContentProjects>
+          <div>
+            <ContentFrame />
+            <ContentFrame />
+            <ContentFrame />
+            <ContentFrame />
+          </div>
+          <div>
+            <ContentFrame />
+            <ContentFrame />
+            <ContentFrame />
+            <ContentFrame />
+          </div>
+          <div>
+            <ContentFrame />
+            <ContentFrame />
+            <ContentFrame />
+            <ContentFrame />
+          </div>
+
+          <div>
+            <ContentFrame />
+            <ContentFrame />
+            <ContentFrame />
+            <ContentFrame />
+          </div>
+        </ContentProjects>
+      </Portfolio>
     </Container>
   )
 }

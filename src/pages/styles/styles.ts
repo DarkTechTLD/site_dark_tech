@@ -143,15 +143,65 @@ export const CardDescriptionText = styled.div`
 export const ContentDescription = styled.div`
   display: flex;
   align-items: center;
-  left: 18%;
   position: relative;
   text-align: right;
-  /* justify-content: center; */
 `;
 
 export const TextInfoContent = styled.p`
   position: absolute;
-  width: 50%;
   display: flex;
   flex-direction: column;
+`;
+
+export const Portfolio = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+`;
+
+export const ContentPortfolio = styled.div`
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const TextInfoPortfolio = styled.div`
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 21em;
+  top: 18em;
+`;
+
+export const ContentProjects = styled.div`
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  right: 0;
+
+  width: 772px;
+  height: 564px;
+  border: 1px solid ${({ theme }) => theme.colors.green};
+  box-shadow: 0px 0px 40px #0000008A;
+  border-radius: 7px;
+  /* padding: 40px; */
+
+  > div {
+    display: flex;
+  
+  }
+`;
+
+export const ContentFrame = styled.div`
+  width: 100px;
+  height: 100px;
+
+  border: 1px solid ${({ theme }) => theme.colors.green};
+  box-shadow: 0px 0px 40px #0000008A;
+  border-radius: 7px;
+  margin-left: 74px;
+  margin-top: 30px;
+
 `;
